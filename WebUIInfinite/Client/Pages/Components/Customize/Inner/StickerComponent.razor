@@ -1,0 +1,175 @@
+@using WebUIInfinite.Shared.Dto.Common
+@using WebUIInfinite.Client.Services.Sticker
+@using WebUIInfinite.Client.Services.Name
+@using WebUIInfinite.Client.Pages.Dialogs
+@using WebUIInfinite.Client.Services.MS
+
+@inject IStickerService StickerService
+@inject INameService NameService
+@inject IDialogService DialogService
+@inject IMobileSuitDataService MobileSuitDataService
+
+<MudItem xs="12">
+    <MudGrid>
+        <MudItem xs="10" sm="5" Class="my-auto">
+            <MudField Label="@localizer["sticker_background"]" Variant="Variant.Outlined">
+                @{
+                    var stickerBackgroundImgPath = $"images/sticker/background/{StickerDto.StickerBackgroundId}.webp";
+                    var stickerBackgroundName = GetStickerBackgroundDisplayName(StickerDto.StickerBackgroundId);
+                }
+                @if (StickerDto.StickerBackgroundId > 0 && EnableImagePreview)
+                {
+                    <div class="d-flex justify-center">
+                        <MudImage ObjectPosition="ObjectPosition.Center" Src="@stickerBackgroundImgPath" Fluid="true" ObjectFit="ObjectFit.Cover" Class="rounded-lg"/>
+                    </div>
+                }
+                <div class="d-flex justify-center">
+                    <MudText Align="Align.Center">@((MarkupString)stickerBackgroundName)</MudText>
+                </div>
+            </MudField>
+        </MudItem>
+        <MudItem xs="2" sm="1" Class="my-auto">
+            <MudIconButton Variant="Variant.Filled" Size="Size.Small" Icon="@Icons.Material.Filled.Edit" aria-label="edit"
+                           OnClick="() => OpenChangeStickerBackgroundDialog(StickerDto)"/>
+        </MudItem>
+        <MudItem xs="10" sm="5" Class="my-auto">
+            <MudField Label="@localizer["sticker_effect"]" Variant="Variant.Outlined">
+                @{
+                    var stickerEffectImgPath = $"images/sticker/effect/{StickerDto.StickerEffectId}.webp";
+                    var stickerEffectName = GetStickerEffectDisplayName(StickerDto.StickerEffectId);
+                }
+                @if (StickerDto.StickerEffectId > 0 && EnableImagePreview)
+                {
+                    <div class="d-flex justify-center">
+                        <MudImage ObjectPosition="ObjectPosition.Center" Src="@stickerEffectImgPath" Fluid="true" ObjectFit="ObjectFit.Cover" Class="rounded-lg"/>
+                    </div>
+                }
+                <div class="d-flex justify-center">
+                    <MudText Align="Align.Center">@((MarkupString)stickerEffectName)</MudText>
+                </div>
+            </MudField>
+        </MudItem>
+        <MudItem xs="2" sm="1" Class="my-auto">
+            <MudIconButton Variant="Variant.Filled" Size="Size.Small" Icon="@Icons.Material.Filled.Edit" aria-label="edit"
+                           OnClick="() => OpenChangeStickerEffectDialog(StickerDto)"/>
+        </MudItem>
+    </MudGrid>
+</MudItem>
+<MudItem xs="12">
+    <MudSelect @bind-Value="StickerDto.Tracker1" Margin="Margin.Normal" T="uint"
+               Label="@localizer["tracker_1"]" Variant="Variant.Outlined">
+        @foreach (var item in GetTrackerTypeList())
+        {
+            <MudSelectItem Value="item.Id">@NameService.GetLocalizedName(item)</MudSelectItem>
+        }
+    </MudSelect>
+</MudItem>
+<MudItem xs="12">
+    <MudSelect @bind-Value="StickerDto.Tracker2" Margin="Margin.Normal" T="uint"
+               Label="@localizer["tracker_2"]" Variant="Variant.Outlined">
+        @foreach (var item in GetTrackerTypeList())
+        {
+            <MudSelectItem Value="item.Id">@NameService.GetLocalizedName(item)</MudSelectItem>
+        }
+    </MudSelect>
+</MudItem>
+<MudItem xs="12">
+    <MudSelect @bind-Value="StickerDto.Tracker3" Margin="Margin.Normal" T="uint"
+               Label="@localizer["tracker_3"]" Variant="Variant.Outlined">
+        @foreach (var item in GetTrackerTypeList())
+        {
+             <MudSelectItem Value="item.Id">@NameService.GetLocalizedName(item)</MudSelectItem>
+        }
+    </MudSelect>
+</MudItem>
+
+@code{
+    [Parameter]
+    public bool EnableImagePreview { get; set; } = false;
+
+    [Parameter]
+    public StickerDto StickerDto { get; set; } = new ();
+    
+    [Parameter]
+    public string Scope { get; set; } = "DefaultSticker";
+
+    private string GetStickerBackgroundDisplayName(uint id)
+    {
+        if (id == 0)
+        {
+            return localizer["sticker_none"];
+        }
+
+        return StickerService.GetStickerBackgroundById(id)?.Value ?? $"Custom ID: {id}";
+    }
+
+    private string GetStickerEffectDisplayName(uint id)
+    {
+        if (id == 0)
+        {
+            return localizer["sticker_none"];
+        }
+
+        return StickerService.GetStickerEffectById(id)?.Value ?? $"Custom ID: {id}";
+    }
+
+    private IReadOnlyList<TrackerType> GetTrackerTypeList()
+    {
+        if (Scope == "DefaultSticker")
+        {
+            return StickerService.GetTrackerTypesSortedById()
+                .Where(tracker => tracker.Category is "All" or "Pilot")
+                .ToList();
+        }
+
+        return StickerService.GetTrackerTypesSortedById();
+    }
+    
+    private async Task OpenChangeStickerBackgroundDialog(StickerDto stickerDto)
+    {
+        var parameters = new DialogParameters
+        {
+            { "Data", new[] { stickerDto.StickerBackgroundId } },
+            { "EnableImagePreview", EnableImagePreview },
+            { "SelectedString", "Selected Sticker Background: "},
+            { "ImagePathPrefix", "images/sticker/background"},
+            { "Mode", "StickerBackground" }
+        };
+        var dialog = await DialogService.ShowAsync<ChangeGeneralPreviewDialog>(localizer["dialogtitle_change_sticker_background"], parameters, DialogOptions);
+        var result = await dialog.Result;
+
+        if (!result.Canceled && result.Data != null)
+        {
+            stickerDto.StickerBackgroundId = (result.Data as uint[])!.FirstOrDefault();
+            StateHasChanged();
+        }
+    }
+    
+    private async Task OpenChangeStickerEffectDialog(StickerDto stickerDto)
+    {
+        var parameters = new DialogParameters
+        {
+            { "Data", new[] { stickerDto.StickerEffectId } },
+            { "EnableImagePreview", EnableImagePreview },
+            { "SelectedString", "Selected Sticker Effect: "},
+            { "ImagePathPrefix", "images/sticker/effect"},
+            { "Mode", "StickerEffect" }
+        };
+        var dialog = await DialogService.ShowAsync<ChangeGeneralPreviewDialog>(localizer["dialogtitle_change_sticker_effect"], parameters, DialogOptions);
+        var result = await dialog.Result;
+
+        if (!result.Canceled && result.Data != null)
+        {
+            stickerDto.StickerEffectId = (result.Data as uint[])!.FirstOrDefault();
+            StateHasChanged();
+        }
+    }
+    
+    private static readonly DialogOptions DialogOptions = new()
+    {
+        CloseOnEscapeKey = false,
+        BackdropClick = false,
+        FullWidth = true,
+        MaxWidth = MaxWidth.ExtraExtraLarge
+    };
+}

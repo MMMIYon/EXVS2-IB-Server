@@ -1,0 +1,26 @@
+# Build
+[Bb]in/
+[Oo]bj/
+
+# Publish & Logs
+publish/
+[Ll]ogs/
+
+# Image Resources
+WebUIInfinite/Client/wwwroot/images/
+
+# User Data
+*.db
+*.db-shm
+*.db-wal
+
+# PowerShell Script
+publish.ps1
+
+# IDE / OS
+.vs/
+.idea/
+*.user
+*.suo
+Thumbs.db
+.DS_Store

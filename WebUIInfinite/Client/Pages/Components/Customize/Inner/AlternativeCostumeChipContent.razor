@@ -1,0 +1,51 @@
+<style>
+    .alt-costume-chip-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .alt-costume-preview-wrap {
+        width: 100%;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .alt-costume-preview {
+        max-height: 120px;
+        max-width: 100%;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        object-position: center;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .alt-costume-label {
+        font-size: 0.75rem;
+        text-align: center;
+        margin-top: 4px;
+        line-height: 1.2;
+        width: 100%;
+    }
+</style>
+
+<div class="alt-costume-chip-content">
+    <div class="alt-costume-preview-wrap">
+        <img src="@ImageSrc" class="alt-costume-preview" alt="@Label"/>
+    </div>
+    <MudText Typo="Typo.caption" Class="alt-costume-label">@Label</MudText>
+</div>
+
+@code {
+    [Parameter]
+    public string ImageSrc { get; set; } = string.Empty;
+
+    [Parameter]
+    public string Label { get; set; } = string.Empty;
+}

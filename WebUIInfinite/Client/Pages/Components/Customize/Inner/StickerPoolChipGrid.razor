@@ -1,0 +1,71 @@
+@using WebUIInfinite.Shared.Dto.Common
+@using WebUIInfinite.Client.Services.Name
+
+@inject INameService NameService
+
+<style>
+    .sticker-pool-chip-set {
+        width: 100%;
+    }
+
+    .sticker-pool-chip-set ::deep .mud-chip {
+        width: 100%;
+        min-height: 150px;
+        height: auto;
+    }
+
+    .sticker-pool-chip-set ::deep .mud-chip-content {
+        width: 100%;
+        justify-content: center;
+    }
+</style>
+
+<MudChipSet T="uint"
+            Class="sticker-pool-chip-set"
+            SelectionMode="SelectionMode.MultiSelection"
+            SelectedValues="_selectedIds"
+            SelectedValuesChanged="OnSelectedValuesChanged">
+    <MudGrid Class="mt-2">
+        @foreach (var option in Options)
+        {
+            <MudItem xs="6" sm="4" md="3" @key="option.Id">
+                <MudChip T="uint"
+                         Value="option.Id"
+                         Variant="Variant.Text"
+                         Color="Color.Primary"
+                         Style="width: 100%; min-height: 150px; height: auto;">
+                    <AlternativeCostumeChipContent
+                        ImageSrc="@ImageSrcFactory(option.Id)"
+                        Label="@NameService.GetLocalizedName(option)"/>
+                </MudChip>
+            </MudItem>
+        }
+    </MudGrid>
+</MudChipSet>
+
+@code {
+    [Parameter]
+    public IReadOnlyList<IdValuePair> Options { get; set; } = Array.Empty<IdValuePair>();
+
+    [Parameter]
+    public List<uint> SelectedIds { get; set; } = new();
+
+    [Parameter]
+    public EventCallback<List<uint>> SelectedIdsChanged { get; set; }
+
+    [Parameter]
+    public Func<uint, string> ImageSrcFactory { get; set; } = _ => string.Empty;
+
+    private HashSet<uint> _selectedIds = new();
+
+    protected override void OnParametersSet()
+    {
+        _selectedIds = SelectedIds.ToHashSet();
+    }
+
+    private async Task OnSelectedValuesChanged(IReadOnlyCollection<uint> values)
+    {
+        _selectedIds = values?.ToHashSet() ?? new HashSet<uint>();
+        await SelectedIdsChanged.InvokeAsync(_selectedIds.ToList());
+    }
+}

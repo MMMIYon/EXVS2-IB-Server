@@ -1,0 +1,61 @@
+@using WebUIInfinite.Shared.Dto.Common
+@using WebUIInfinite.Client.Services.Name
+@using WebUIInfinite.Client.Services.MS
+
+@inject INameService NameService
+@inject IMobileSuitDataService MobileSuitDataService
+
+<MudItem xs="12">
+    <MudPaper Class="pa-4 my-2" Elevation="2">
+        <MudText Typo="Typo.subtitle1" Class="mb-2">@localizer["sticker_pose_pool"]</MudText>
+        <StickerPoolChipGrid
+            Options="@PoseOptions"
+            SelectedIds="@(StickerDto.PoseIds ?? new List<uint>())"
+            SelectedIdsChanged="OnPoseIdsChanged"
+            ImageSrcFactory="@GetPosePreviewSrc"/>
+        <MudText Color="Color.Warning" Class="mt-2">@localizer["ms_sticker_pose_reminder"]</MudText>
+    </MudPaper>
+</MudItem>
+
+@code {
+    [Parameter]
+    public StickerDto StickerDto { get; set; } = new();
+
+    [Parameter]
+    public bool EnableImagePreview { get; set; } = false;
+
+    [Parameter]
+    public uint MobileSuitId { get; set; } = 0;
+
+    private List<IdValuePair> PoseOptions => EnsureDefaultOption(
+        MobileSuitDataService.GetMobileSuitById(MobileSuitId)?.Poses);
+
+    private List<IdValuePair> EnsureDefaultOption(List<IdValuePair>? items)
+    {
+        var list = items?.ToList() ?? new List<IdValuePair>();
+        if (list.All(item => item.Id != 0))
+        {
+            list.Insert(0, CreateDefaultOption());
+        }
+
+        return list;
+    }
+
+    private IdValuePair CreateDefaultOption() =>
+        new()
+        {
+            Id = 0,
+            Value = localizer["sticker_pool_default"],
+            ValueCN = localizer["sticker_pool_default"],
+            ValueJP = localizer["sticker_pool_default"],
+        };
+
+    private string GetPosePreviewSrc(uint poseId) => $"images/sticker/ms/{MobileSuitId}_{poseId}.webp";
+
+    private Task OnPoseIdsChanged(List<uint> poseIds)
+    {
+        StickerDto.PoseIds = poseIds;
+        StickerDto.PoseId = poseIds.FirstOrDefault();
+        return Task.CompletedTask;
+    }
+}

@@ -1,0 +1,223 @@
+@using WebUIInfinite.Shared.Dto.Common
+@using WebUIInfinite.Client.Services.Name
+@using WebUIInfinite.Client.Services.MS
+@using WebUIInfinite.Client.Services.Sticker
+@using WebUIInfinite.Client.Pages.Dialogs
+
+@inject INameService NameService
+@inject IMobileSuitDataService MobileSuitDataService
+@inject IStickerService StickerService
+@inject IDialogService DialogService
+
+<MudItem xs="12">
+    @if (UsePaperWrapper)
+    {
+        <MudPaper Class="pa-4 my-2" Elevation="2">
+            <MudGrid Class="align-center">
+                <MudItem xs="8" sm="9" Class="my-auto">
+                    <MudText Typo="Typo.subtitle1">@localizer["sticker_pilot_image_disp"]</MudText>
+                </MudItem>
+                <MudItem xs="4" sm="3" Class="my-auto d-flex justify-end">
+                    <MudSwitch @bind-Value="PilotImageDispFlag" Color="Color.Primary"
+                               Label="" LabelPlacement="Placement.Start"/>
+                </MudItem>
+
+                @if (ShowCutinImageUse && PilotImageDispFlag)
+                {
+                    <MudItem xs="8" sm="9" Class="my-auto">
+                        <MudText Typo="Typo.subtitle1">@localizer[CutinImageUseLabelKey]</MudText>
+                    </MudItem>
+                    <MudItem xs="4" sm="3" Class="my-auto d-flex justify-end">
+                        <MudSwitch @bind-Value="CutinImageUseFlag" Color="Color.Primary"
+                                   Label="" LabelPlacement="Placement.Start"/>
+                    </MudItem>
+                }
+            </MudGrid>
+
+            @if (ShowCostumePool && StickerDto.PilotImageDispFlag)
+            {
+                <MudDivider Class="my-3"/>
+                <MudText Typo="Typo.subtitle1" Class="mb-2">@localizer["sticker_costume_for_pilot"]</MudText>
+                <MudGrid Class="mt-2">
+                    <MudItem xs="12">
+                        <StickerPoolChipGrid
+                            Options="@CostumeOptions"
+                            SelectedIds="@(StickerDto.CostumeIds ?? new List<uint>())"
+                            SelectedIdsChanged="OnCostumeIdsChanged"
+                            ImageSrcFactory="@GetCostumePreviewSrc"/>
+                    </MudItem>
+                </MudGrid>
+
+                <MudDivider Class="my-3"/>
+                <MudGrid Justify="Justify.Center" Class="align-center">
+                    <MudItem xs="10" sm="5" Class="my-auto">
+                        <MudField Label="@localizer["sticker_sub_background"]" Variant="Variant.Outlined">
+                            @{
+                                var subBackgroundImgPath = $"images/sticker/background/{StickerDto.SubBackgroundId}.webp";
+                                var subBackgroundName = GetStickerBackgroundDisplayName(StickerDto.SubBackgroundId);
+                            }
+                            @if (StickerDto.SubBackgroundId > 0 && EnableImagePreview)
+                            {
+                                <div class="d-flex justify-center">
+                                    <MudImage ObjectPosition="ObjectPosition.Center" Src="@subBackgroundImgPath" Fluid="true"
+                                              ObjectFit="ObjectFit.Cover" Class="rounded-lg"/>
+                                </div>
+                            }
+                            <div class="d-flex justify-center">
+                                <MudText Align="Align.Center">@((MarkupString)subBackgroundName)</MudText>
+                            </div>
+                        </MudField>
+                    </MudItem>
+                    <MudItem xs="2" sm="1" Class="my-auto">
+                        <MudIconButton Variant="Variant.Filled" Size="Size.Small" Icon="@Icons.Material.Filled.Edit"
+                                       aria-label="edit sub background"
+                                       OnClick="OpenChangeSubBackgroundDialog"/>
+                    </MudItem>
+                </MudGrid>
+            }
+        </MudPaper>
+    }
+    else
+    {
+        <MudGrid Class="align-center">
+            <MudItem xs="6" Class="my-auto mud-typography mud-typography-body1">
+                @localizer["sticker_pilot_image_disp"]
+            </MudItem>
+            <MudItem xs="6" Class="my-auto d-flex justify-end">
+                <MudSwitch @bind-Value="PilotImageDispFlag" Color="Color.Primary"
+                           Label="" LabelPlacement="Placement.Start"/>
+            </MudItem>
+
+            @if (ShowCutinImageUse && PilotImageDispFlag)
+            {
+                <MudItem xs="6" Class="my-auto mud-typography mud-typography-body1">
+                    @localizer[CutinImageUseLabelKey]
+                </MudItem>
+                <MudItem xs="6" Class="my-auto d-flex justify-end">
+                    <MudSwitch @bind-Value="CutinImageUseFlag" Color="Color.Primary"
+                               Label="" LabelPlacement="Placement.Start"/>
+                </MudItem>
+            }
+        </MudGrid>
+    }
+</MudItem>
+
+@code {
+    [Parameter]
+    public StickerDto StickerDto { get; set; } = new();
+
+    [Parameter]
+    public string CutinImageUseLabelKey { get; set; } = "sticker_cutin_image_use_pilot";
+
+    [Parameter]
+    public bool ShowCutinImageUse { get; set; } = true;
+
+    [Parameter]
+    public bool EnableImagePreview { get; set; } = false;
+
+    [Parameter]
+    public bool ShowCostumePool { get; set; } = false;
+
+    [Parameter]
+    public bool UsePaperWrapper { get; set; } = true;
+
+    [Parameter]
+    public uint MobileSuitId { get; set; } = 0;
+
+    protected override void OnParametersSet()
+    {
+        if (!ShowCutinImageUse)
+        {
+            StickerDto.CutinImageUseFlag = false;
+        }
+    }
+
+    private Task OnCostumeIdsChanged(List<uint> costumeIds)
+    {
+        StickerDto.CostumeIds = costumeIds;
+        return Task.CompletedTask;
+    }
+
+    private bool PilotImageDispFlag
+    {
+        get => StickerDto.PilotImageDispFlag;
+        set
+        {
+            StickerDto.PilotImageDispFlag = value;
+            if (!value)
+            {
+                StickerDto.CutinImageUseFlag = false;
+            }
+        }
+    }
+
+    private bool CutinImageUseFlag
+    {
+        get => StickerDto.CutinImageUseFlag;
+        set => StickerDto.CutinImageUseFlag = value;
+    }
+
+    private List<IdValuePair> CostumeOptions => EnsureDefaultOption(
+        MobileSuitDataService.GetMobileSuitById(MobileSuitId)?.Costumes);
+
+    private List<IdValuePair> EnsureDefaultOption(List<IdValuePair>? items)
+    {
+        var list = items?.ToList() ?? new List<IdValuePair>();
+        if (list.All(item => item.Id != 0))
+        {
+            list.Insert(0, CreateDefaultOption());
+        }
+
+        return list;
+    }
+
+    private IdValuePair CreateDefaultOption() =>
+        new()
+        {
+            Id = 0,
+            Value = localizer["sticker_pool_default"],
+            ValueCN = localizer["sticker_pool_default"],
+            ValueJP = localizer["sticker_pool_default"],
+        };
+
+    private string GetCostumePreviewSrc(uint costumeId) => $"images/pilots/{MobileSuitId}_{costumeId}.webp";
+
+    private string GetStickerBackgroundDisplayName(uint id)
+    {
+        if (id == 0)
+        {
+            return localizer["sticker_none"];
+        }
+
+        return StickerService.GetStickerBackgroundById(id)?.Value ?? $"Custom ID: {id}";
+    }
+
+    private async Task OpenChangeSubBackgroundDialog()
+    {
+        var parameters = new DialogParameters
+        {
+            { "Data", new[] { StickerDto.SubBackgroundId } },
+            { "EnableImagePreview", EnableImagePreview },
+            { "SelectedString", "Selected Sticker Background: " },
+            { "ImagePathPrefix", "images/sticker/background" },
+            { "Mode", "StickerBackground" }
+        };
+        var dialog = await DialogService.ShowAsync<ChangeGeneralPreviewDialog>(
+            localizer["dialogtitle_change_sticker_background"], parameters, DialogOptions);
+        var result = await dialog.Result;
+
+        if (!result.Canceled && result.Data != null)
+        {
+            StickerDto.SubBackgroundId = (result.Data as uint[])!.FirstOrDefault();
+            StateHasChanged();
+        }
+    }
+
+    private static readonly DialogOptions DialogOptions = new()
+    {
+        CloseOnEscapeKey = false,
+        BackdropClick = false,
+        FullWidth = true,
+        MaxWidth = MaxWidth.ExtraExtraLarge
+    };
+}
