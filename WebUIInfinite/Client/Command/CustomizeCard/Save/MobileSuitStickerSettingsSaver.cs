@@ -31,7 +31,7 @@ public class MobileSuitStickerSettingsSaver : ICustomizeCardContentSaver
     {
         progressContext.HideMobileSuitStickerProgress = "visible";
         stateHasChanged.Invoke();
-        
+
         foreach (var sticker in customizeCardContext.MobileSuitStickerSettings)
         {
             StickerPilotPoolDefaults.ApplyEmptyPoolDefaultsOnSave(sticker);

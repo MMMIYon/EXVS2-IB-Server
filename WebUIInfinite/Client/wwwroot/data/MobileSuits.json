@@ -1,29 +1,5 @@
 ﻿[
     {
-        "Id":  0,
-        "Value":  "-",
-        "ValueJP":  "-",
-        "ValueCN":  "-",
-        "ValueTC":  "-",
-        "ValueTC2":  "-",
-        "Pilot":  "-",
-        "PilotJP":  "-",
-        "PilotCN":  "-",
-        "PilotTC":  "-",
-        "PilotTC2":  "-",
-        "PilotSeiyuu":  "-",
-        "PilotSeiyuuJP":  "-",
-        "PilotSeiyuuCN":  "-",
-        "PilotSeiyuuTC":  "-",
-        "PilotSeiyuuTC2":  "-",
-        "Series":  "-",
-        "SeriesJP":  "-",
-        "SeriesCN":  "-",
-        "SeriesTC":  "-",
-        "SeriesTC2":  "-",
-        "Cost":  0
-    },
-    {
         "Id":  1,
         "Value":  "Gundam RX-78",
         "ValueJP":  "ガンダム",
@@ -59,7 +35,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -68,6 +44,14 @@
                       {
                           "Id":  2,
                           "Value":  "EXVS.ポーズド"
+                      },
+                      {
+                          "Id":  3,
+                          "Value":  "OB→IB引継ぎキャンペーン"
+                      },
+                      {
+                          "Id":  11,
+                          "Value":  "G-3カラー"
                       }
                   ]
     },
@@ -97,7 +81,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -131,7 +115,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -165,7 +149,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -203,7 +187,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -241,7 +225,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -275,7 +259,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -312,7 +296,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -356,7 +340,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -400,7 +384,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -409,6 +393,10 @@
                       {
                           "Id":  2,
                           "Value":  "EXVSポーズド"
+                      },
+                      {
+                          "Id":  3,
+                          "Value":  "アーセナルベースコラボ"
                       }
                   ]
     },
@@ -448,11 +436,15 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
                           "Value":  "EXVSポーズド"
+                      },
+                      {
+                          "Id":  2,
+                          "Value":  "MBポーズド"
                       }
                   ]
     },
@@ -492,11 +484,15 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
                           "Value":  "EXVSポーズド"
+                      },
+                      {
+                          "Id":  2,
+                          "Value":  "MBONポーズド"
                       }
                   ]
     },
@@ -536,7 +532,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -574,11 +570,15 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
                           "Value":  "FBポーズド"
+                      },
+                      {
+                          "Id":  2,
+                          "Value":  "MBポーズド"
                       }
                   ]
     },
@@ -608,7 +608,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -617,6 +617,10 @@
                       {
                           "Id":  2,
                           "Value":  "MBONポーズド"
+                      },
+                      {
+                          "Id":  3,
+                          "Value":  " アーセナルベースコラボ"
                       }
                   ]
     },
@@ -646,7 +650,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -684,11 +688,15 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
                           "Value":  "OBポーズドB"
+                      },
+                      {
+                          "Id":  2,
+                          "Value":  "MBポーズド"
                       }
                   ]
     },
@@ -718,11 +726,15 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
                           "Value":  "MBONポーズド"
+                      },
+                      {
+                          "Id":  2,
+                          "Value":  "OBポーズド"
                       }
                   ]
     },
@@ -762,7 +774,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -810,7 +822,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -854,7 +866,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -892,7 +904,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -926,7 +938,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -970,7 +982,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -1014,7 +1026,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -1048,7 +1060,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -1082,7 +1094,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -1126,7 +1138,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -1174,7 +1186,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -1208,7 +1220,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -1246,7 +1258,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -1290,7 +1302,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -1338,7 +1350,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -1382,7 +1394,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -1416,7 +1428,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -1460,7 +1472,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -1508,7 +1520,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -1548,7 +1560,17 @@
                              "Id":  1,
                              "Value":  "制服"
                          }
-                     ]
+                     ],
+        "Poses":  [
+                      {
+                          "Id":  0,
+                          "Value":  "IBポーズド"
+                      },
+                      {
+                          "Id":  1,
+                          "Value":  "OBポーズド"
+                      }
+                  ]
     },
     {
         "Id":  73,
@@ -1586,7 +1608,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -1630,7 +1652,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -1678,7 +1700,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -1726,7 +1748,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -1770,7 +1792,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -1804,7 +1826,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -1848,7 +1870,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -1882,7 +1904,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -1926,7 +1948,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -1970,7 +1992,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -2018,7 +2040,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -2056,7 +2078,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -2100,7 +2122,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -2112,7 +2134,7 @@
         "Id":  92,
         "Value":  "Gundam Heavyarms Kai",
         "ValueJP":  "ガンダムヘビーアームズ改",
-        "ValueCN":  "重武装高达",
+        "ValueCN":  "重装高达改",
         "ValueTC":  "重砲手高達改",
         "ValueTC2":  "重武裝鋼彈改",
         "Pilot":  "Trowa Barton",
@@ -2140,7 +2162,21 @@
                              "Id":  1,
                              "Value":  "アストロスーツ"
                          }
-                     ]
+                     ],
+        "Poses":  [
+                      {
+                          "Id":  0,
+                          "Value":  "IBポーズド"
+                      },
+                      {
+                          "Id":  1,
+                          "Value":  "MBポーズド"
+                      },
+                      {
+                          "Id":  2,
+                          "Value":  "OBポーズド"
+                      }
+                  ]
     },
     {
         "Id":  93,
@@ -2178,7 +2214,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -2212,7 +2248,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -2246,7 +2282,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -2290,7 +2326,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -2302,7 +2338,7 @@
         "Id":  97,
         "Value":  "Gundam Heavyarms Custom",
         "ValueJP":  "ガンダムヘビーアームズ改(EW版)",
-        "ValueCN":  "重武装高达EW",
+        "ValueCN":  "重装高达改EW",
         "ValueTC":  "重砲手高達改 (EW版)",
         "ValueTC2":  "重武裝鋼彈改 (EW版)",
         "Pilot":  "Trowa Barton",
@@ -2324,7 +2360,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -2368,7 +2404,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -2412,7 +2448,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -2447,10 +2483,20 @@
         "SeriesTC":  "機動新世紀高達X",
         "SeriesTC2":  "機動新世紀鋼彈X",
         "Cost":  3000,
+        "Costumes":  [
+                         {
+                             "Id":  0,
+                             "Value":  "デフォルト"
+                         },
+                         {
+                             "Id":  1,
+                             "Value":  "ノーマルスーツ"
+                         }
+                     ],
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -2488,7 +2534,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -2526,7 +2572,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -2574,11 +2620,15 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
                           "Value":  "FBポーズド"
+                      },
+                      {
+                          "Id":  11,
+                          "Value":  "3号機風カラー"
                       }
                   ],
         "Skins":  [
@@ -2628,7 +2678,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -2666,7 +2716,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -2714,7 +2764,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -2758,7 +2808,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -2792,7 +2842,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -2836,7 +2886,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -2884,11 +2934,15 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
                           "Value":  "EXVSポーズド"
+                      },
+                      {
+                          "Id":  2,
+                          "Value":  "FBポーズド"
                       }
                   ]
     },
@@ -2928,7 +2982,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -2962,7 +3016,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -3006,7 +3060,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -3054,7 +3108,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -3102,7 +3156,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -3146,7 +3200,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -3194,7 +3248,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -3238,7 +3292,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -3282,7 +3336,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -3326,7 +3380,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -3370,7 +3424,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -3418,7 +3472,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -3470,7 +3524,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -3514,7 +3568,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -3558,7 +3612,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -3602,7 +3656,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -3646,7 +3700,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -3690,7 +3744,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -3734,7 +3788,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -3778,7 +3832,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -3818,7 +3872,21 @@
                              "Id":  1,
                              "Value":  "ザフト制服"
                          }
-                     ]
+                     ],
+        "Poses":  [
+                      {
+                          "Id":  0,
+                          "Value":  "IBポーズド"
+                      },
+                      {
+                          "Id":  1,
+                          "Value":  "OBポーズド"
+                      },
+                      {
+                          "Id":  2,
+                          "Value":  "MBONポーズド"
+                      }
+                  ]
     },
     {
         "Id":  137,
@@ -3856,7 +3924,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -3900,7 +3968,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -3952,7 +4020,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -4000,7 +4068,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -4044,7 +4112,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -4126,7 +4194,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -4170,7 +4238,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -4218,7 +4286,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -4252,7 +4320,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -4296,7 +4364,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -4350,11 +4418,15 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
                           "Value":  "MBポーズド"
+                      },
+                      {
+                          "Id":  11,
+                          "Value":  "インスペクションカラー"
                       }
                   ]
     },
@@ -4394,7 +4466,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -4438,7 +4510,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -4482,7 +4554,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -4526,7 +4598,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -4566,7 +4638,17 @@
                              "Id":  1,
                              "Value":  "インナースーツ"
                          }
-                     ]
+                     ],
+        "Poses":  [
+                      {
+                          "Id":  0,
+                          "Value":  "IBポーズド"
+                      },
+                      {
+                          "Id":  1,
+                          "Value":  "OBポーズド"
+                      }
+                  ]
     },
     {
         "Id":  157,
@@ -4604,7 +4686,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -4648,11 +4730,15 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
                           "Value":  "MBポーズド"
+                      },
+                      {
+                          "Id":  2,
+                          "Value":  "EXVSポーズド"
                       }
                   ]
     },
@@ -4692,7 +4778,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -4740,7 +4826,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -4784,7 +4870,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -4828,7 +4914,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -4862,7 +4948,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -4906,11 +4992,15 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
                           "Value":  "EXVSポーズド"
+                      },
+                      {
+                          "Id":  2,
+                          "Value":  "MBONポーズド"
                       }
                   ]
     },
@@ -4950,7 +5040,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -4998,7 +5088,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -5036,7 +5126,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -5080,7 +5170,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -5128,7 +5218,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -5172,7 +5262,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -5210,7 +5300,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -5258,7 +5348,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -5267,6 +5357,10 @@
                       {
                           "Id":  2,
                           "Value":  "MBポーズド"
+                      },
+                      {
+                          "Id":  11,
+                          "Value":  "NT-1プロトカラー"
                       }
                   ],
         "Skins":  [
@@ -5306,11 +5400,15 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
                           "Value":  "FBポーズド"
+                      },
+                      {
+                          "Id":  2,
+                          "Value":  "MBONポーズド"
                       }
                   ]
     },
@@ -5340,7 +5438,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -5374,7 +5472,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -5412,7 +5510,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -5450,11 +5548,15 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
                           "Value":  "FBポーズド"
+                      },
+                      {
+                          "Id":  2,
+                          "Value":  "MBポーズド"
                       }
                   ]
     },
@@ -5484,7 +5586,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -5518,7 +5620,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -5556,7 +5658,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -5594,7 +5696,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -5628,7 +5730,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -5662,11 +5764,15 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
                           "Value":  "FBポーズド"
+                      },
+                      {
+                          "Id":  2,
+                          "Value":  "MBポーズド"
                       }
                   ]
     },
@@ -5696,7 +5802,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -5744,7 +5850,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -5753,6 +5859,10 @@
                       {
                           "Id":  2,
                           "Value":  "MBポーズド"
+                      },
+                      {
+                          "Id":  3,
+                          "Value":  "IBポーズドB"
                       }
                   ]
     },
@@ -5792,11 +5902,15 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
                           "Value":  "MBONポーズド"
+                      },
+                      {
+                          "Id":  2,
+                          "Value":  "EXVSポーズド"
                       }
                   ]
     },
@@ -5826,11 +5940,15 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
                           "Value":  "MBポーズド"
+                      },
+                      {
+                          "Id":  2,
+                          "Value":  "IBポーズドB"
                       }
                   ]
     },
@@ -5870,11 +5988,15 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
                           "Value":  "FBポーズド"
+                      },
+                       {
+                          "Id":  2,
+                          "Value":  "IBポーズドB"
                       }
                   ]
     },
@@ -5914,7 +6036,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -5948,11 +6070,15 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
                           "Value":  "MBONポーズド"
+                      },
+                       {
+                          "Id":  2,
+                          "Value":  "IBポーズドB"
                       }
                   ]
     },
@@ -5975,14 +6101,14 @@
         "PilotSeiyuuTC2":  "諏訪部順一",
         "Series":  "Mobile Suit Gundam Side Story: The Blue Destiny",
         "SeriesJP":  "機動戦士ガンダム外伝 THE BLUE DESTINY",
-        "SeriesCN":  "机动战士高达外传 THE BLUE DESTINY",
+        "SeriesCN":  "机动战士高达外传 蓝色命运",
         "SeriesTC":  "機動戰士高達外傳 THE BLUE DESTINY",
         "SeriesTC2":  "機動戰士鋼彈外傳 THE BLUE DESTINY",
         "Cost":  2000,
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -6013,14 +6139,14 @@
         "PilotSeiyuuTC2":  "速水獎",
         "Series":  "Mobile Suit Gundam Side Story: The Blue Destiny",
         "SeriesJP":  "機動戦士ガンダム外伝 THE BLUE DESTINY",
-        "SeriesCN":  "机动战士高达外传 THE BLUE DESTINY",
+        "SeriesCN":  "机动战士高达外传 蓝色命运",
         "SeriesTC":  "機動戰士高達外傳 THE BLUE DESTINY",
         "SeriesTC2":  "機動戰士鋼彈外傳 THE BLUE DESTINY",
         "Cost":  1500,
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -6064,11 +6190,15 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
                           "Value":  "FBポーズド"
+                      },
+                      {
+                          "Id":  2,
+                          "Value":  "GGGP2024"
                       }
                   ]
     },
@@ -6108,11 +6238,15 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
                           "Value":  "MBポーズド"
+                      },
+                      {
+                          "Id":  2,
+                          "Value":  "MBONポーズド"
                       }
                   ]
     },
@@ -6152,11 +6286,15 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
                           "Value":  "MBONポーズド"
+                      },
+                      {
+                          "Id":  2,
+                          "Value":  "IBポーズドB"
                       }
                   ]
     },
@@ -6196,7 +6334,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -6205,6 +6343,10 @@
                       {
                           "Id":  2,
                           "Value":  "FBポーズド"
+                      },
+                      {
+                          "Id":  3,
+                          "Value":  "IBポーズドB"
                       }
                   ]
     },
@@ -6244,7 +6386,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -6253,6 +6395,10 @@
                       {
                           "Id":  2,
                           "Value":  "MBポーズド"
+                      },
+                      {
+                          "Id":  3,
+                          "Value":  "IBポーズドB"
                       }
                   ]
     },
@@ -6282,7 +6428,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -6320,11 +6466,15 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
                           "Value":  "MBポーズド"
+                      },
+                      {
+                          "Id":  2,
+                          "Value":  "IBポーズドB"
                       }
                   ]
     },
@@ -6364,11 +6514,15 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
                           "Value":  "MBONポーズド"
+                      },
+                      {
+                          "Id":  2,
+                          "Value":  "IBポーズドB"
                       }
                   ]
     },
@@ -6408,7 +6562,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -6452,7 +6606,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -6496,7 +6650,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -6540,7 +6694,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -6584,7 +6738,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -6618,7 +6772,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -6656,7 +6810,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -6694,7 +6848,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -6738,7 +6892,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -6782,11 +6936,19 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
                           "Value":  "MBポーズド"
+                      },
+                      {
+                          "Id":  2,
+                          "Value":  "MBONポーズド"
+                      },
+                      {
+                          "Id":  11,
+                          "Value":  "特務隊仕様"
                       }
                   ],
         "Skins":  [
@@ -6836,7 +6998,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -6880,7 +7042,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -6924,7 +7086,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -6958,7 +7120,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -7002,11 +7164,15 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
                           "Value":  "MBポーズド"
+                      },
+                      {
+                          "Id":  11,
+                          "Value":  "MEMORY OF EDENカラー"
                       }
                   ],
         "Skins":  [
@@ -7046,7 +7212,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -7090,7 +7256,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -7134,7 +7300,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -7188,11 +7354,15 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
                           "Value":  "MBONポーズド"
+                      },
+                      {
+                          "Id":  11,
+                          "Value":  "EXVS. 10th ANNIVERSARYカラー"
                       }
                   ]
     },
@@ -7232,7 +7402,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -7276,7 +7446,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -7320,11 +7490,15 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
                           "Value":  "MBポーズド"
+                      },
+                      {
+                          "Id":  2,
+                          "Value":  "IBポーズドB"
                       }
                   ]
     },
@@ -7364,11 +7538,15 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
                           "Value":  "MBONポーズド"
+                      },
+                      {
+                          "Id":  2,
+                          "Value":  "IBポーズドB"
                       }
                   ]
     },
@@ -7408,7 +7586,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -7452,7 +7630,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -7496,11 +7674,15 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
                           "Value":  "MBONポーズド"
+                      },
+                      {
+                          "Id":  2,
+                          "Value":  "EXVS2ポーズド"
                       }
                   ]
     },
@@ -7540,7 +7722,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -7584,7 +7766,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -7628,11 +7810,15 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
                           "Value":  "MBONポーズド"
+                      },
+                      {
+                          "Id":  2,
+                          "Value":  "EXVS.2ポーズド"
                       }
                   ]
     },
@@ -7662,11 +7848,15 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
                           "Value":  "MBONポーズド"
+                      },
+                      {
+                          "Id":  2,
+                          "Value":  "EXVS.2ポーズド"
                       }
                   ]
     },
@@ -7706,7 +7896,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -7715,6 +7905,10 @@
                       {
                           "Id":  2,
                           "Value":  "MBONポーズド"
+                      },
+                      {
+                          "Id":  3,
+                          "Value":  "EXVS.2ポーズド"
                       }
                   ]
     },
@@ -7754,11 +7948,15 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
                           "Value":  "MBONポーズド"
+                      },
+                      {
+                          "Id":  2,
+                          "Value":  "EXVS.2ポーズド"
                       }
                   ]
     },
@@ -7798,7 +7996,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -7842,7 +8040,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -7851,6 +8049,10 @@
                       {
                           "Id":  2,
                           "Value":  "MBONポーズド"
+                      },
+                      {
+                          "Id":  3,
+                          "Value":  "EXVS.2ポーズド"
                       }
                   ]
     },
@@ -7880,11 +8082,15 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
                           "Value":  "OBポーズドB"
+                      },
+                      {
+                          "Id":  2,
+                          "Value":  "EXVS.2ポーズド"
                       }
                   ]
     },
@@ -7914,7 +8120,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -7948,7 +8154,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -7982,7 +8188,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -8026,7 +8232,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -8070,7 +8276,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -8104,7 +8310,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -8148,7 +8354,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -8182,7 +8388,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -8226,7 +8432,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -8260,11 +8466,15 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
                           "Value":  "MBONポーズド"
+                      },
+                      {
+                          "Id":  2,
+                          "Value":  "IBポーズドB"
                       }
                   ]
     },
@@ -8287,7 +8497,7 @@
         "PilotSeiyuuTC2":  "冨樫和美",
         "Series":  "Gundam Build Fighters Try",
         "SeriesJP":  "ガンダムビルドファイターズトライ",
-        "SeriesCN":  "高达创斗者TRY",
+        "SeriesCN":  "高达创战者TRY",
         "SeriesTC":  "高達創戰者TRY",
         "SeriesTC2":  "鋼彈創鬥者TRY",
         "Cost":  2500,
@@ -8304,7 +8514,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -8331,7 +8541,7 @@
         "PilotSeiyuuTC2":  "內田雄馬",
         "Series":  "Gundam Build Fighters Try",
         "SeriesJP":  "ガンダムビルドファイターズトライ",
-        "SeriesCN":  "高达创斗者TRY",
+        "SeriesCN":  "高达创战者TRY",
         "SeriesTC":  "高達創戰者TRY",
         "SeriesTC2":  "鋼彈創鬥者TRY",
         "Cost":  2500,
@@ -8348,7 +8558,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -8375,7 +8585,7 @@
         "PilotSeiyuuTC2":  "牧野由依",
         "Series":  "Gundam Build Fighters Try",
         "SeriesJP":  "ガンダムビルドファイターズトライ",
-        "SeriesCN":  "高达创斗者TRY",
+        "SeriesCN":  "高达创战者TRY",
         "SeriesTC":  "高達創戰者TRY",
         "SeriesTC2":  "鋼彈創鬥者TRY",
         "Cost":  2500,
@@ -8392,7 +8602,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -8436,7 +8646,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -8480,7 +8690,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -8514,7 +8724,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -8558,7 +8768,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -8592,7 +8802,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -8636,7 +8846,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -8680,7 +8890,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -8724,7 +8934,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -8768,7 +8978,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -8802,7 +9012,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -8836,7 +9046,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -8880,11 +9090,15 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
                           "Value":  "OBポーズドB"
+                      },
+                      {
+                          "Id":  2,
+                          "Value":  "EXVS.2ポーズド"
                       }
                   ]
     },
@@ -8924,11 +9138,15 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
                           "Value":  "OBポーズドB"
+                      },
+                      {
+                          "Id":  2,
+                          "Value":  "IBポーズドB"
                       }
                   ]
     },
@@ -8968,11 +9186,15 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
                           "Value":  "OBポーズドB"
+                      },
+                      {
+                          "Id":  11,
+                          "Value":  "獅子吼カラー"
                       }
                   ],
         "Skins":  [
@@ -9022,11 +9244,15 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
                           "Value":  "OBポーズドB"
+                      },
+                      {
+                          "Id":  2,
+                          "Value":  "XBポーズド"
                       }
                   ]
     },
@@ -9066,7 +9292,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -9110,7 +9336,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -9162,7 +9388,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -9179,6 +9405,10 @@
                       {
                           "Id":  4,
                           "Value":  "OBポーズドB"
+                      },
+                      {
+                          "Id":  11,
+                          "Value":  "プライマルカラー"
                       }
                   ],
         "Skins":  [
@@ -9236,7 +9466,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -9249,6 +9479,10 @@
                       {
                           "Id":  3,
                           "Value":  "N-EXTREME KVポーズド"
+                      },
+                      {
+                          "Id":  11,
+                          "Value":  "プライマルカラー"
                       }
                   ],
         "Skins":  [
@@ -9306,7 +9540,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -9319,6 +9553,10 @@
                       {
                           "Id":  3,
                           "Value":  "N-EXTREME KVポーズド"
+                      },
+                      {
+                          "Id":  11,
+                          "Value":  "プライマルカラー"
                       }
                   ],
         "Skins":  [
@@ -9376,7 +9614,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -9389,6 +9627,10 @@
                       {
                           "Id":  3,
                           "Value":  "N-EXTREME KVポーズド"
+                      },
+                      {
+                          "Id":  11,
+                          "Value":  "プライマルカラー"
                       }
                   ],
         "Skins":  [
@@ -9438,7 +9680,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -9482,7 +9724,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -9516,7 +9758,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -9560,7 +9802,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -9604,7 +9846,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -9648,7 +9890,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -9696,7 +9938,7 @@
         "Poses":  [
                       {
                           "Id":  0,
-                          "Value":  "Default"
+                          "Value":  "IBポーズド"
                       },
                       {
                           "Id":  1,
@@ -9740,7 +9982,17 @@
                              "Id":  1,
                              "Value":  "普段着"
                          }
-                     ]
+                     ],
+        "Poses":  [
+                      {
+                          "Id":  0,
+                          "Value":  "IBポーズド"
+                      },
+                      {
+                          "Id":  1,
+                          "Value":  "OBポーズド"
+                      }
+                  ]
     },
     {
         "Id":  316,
@@ -9774,7 +10026,17 @@
                              "Id":  1,
                              "Value":  "学生服"
                          }
-                     ]
+                     ],
+        "Poses":  [
+                      {
+                          "Id":  0,
+                          "Value":  "IBポーズド"
+                      },
+                      {
+                          "Id":  1,
+                          "Value":  "OBポーズド"
+                      }
+                  ]
     },
     {
         "Id":  317,
@@ -9808,7 +10070,17 @@
                              "Id":  1,
                              "Value":  "制服"
                          }
-                     ]
+                     ],
+        "Poses":  [
+                      {
+                          "Id":  0,
+                          "Value":  "IBポーズド"
+                      },
+                      {
+                          "Id":  1,
+                          "Value":  "OBポーズド"
+                      }
+                  ]
     },
     {
         "Id":  318,
@@ -9842,7 +10114,21 @@
                              "Id":  1,
                              "Value":  "制服"
                          }
-                     ]
+                     ],
+        "Poses":  [
+                      {
+                          "Id":  0,
+                          "Value":  "IBポーズド"
+                      },
+                      {
+                          "Id":  1,
+                          "Value":  "GGGP2024"
+                      },
+                      {
+                          "Id":  2,
+                          "Value":  "OBポーズド"
+                      }
+                  ]
     },
     {
         "Id":  319,
@@ -9876,7 +10162,17 @@
                              "Id":  1,
                              "Value":  "私服"
                          }
-                     ]
+                     ],
+        "Poses":  [
+                      {
+                          "Id":  0,
+                          "Value":  "IBポーズド"
+                      },
+                      {
+                          "Id":  1,
+                          "Value":  "OBポーズド"
+                      }
+                  ]
     },
     {
         "Id":  320,
@@ -9910,7 +10206,17 @@
                              "Id":  1,
                              "Value":  "ビジネススーツ"
                          }
-                     ]
+                     ],
+        "Poses":  [
+                      {
+                          "Id":  0,
+                          "Value":  "IBポーズド"
+                      },
+                      {
+                          "Id":  1,
+                          "Value":  "OBポーズド"
+                      }
+                  ]
     },
     {
         "Id":  321,
@@ -9944,7 +10250,17 @@
                              "Id":  1,
                              "Value":  "制服"
                          }
-                     ]
+                     ],
+        "Poses":  [
+                      {
+                          "Id":  0,
+                          "Value":  "IBポーズド"
+                      },
+                      {
+                          "Id":  1,
+                          "Value":  "OBポーズド"
+                      }
+                  ]
     },
     {
         "Id":  322,
@@ -9965,10 +10281,20 @@
         "PilotSeiyuuTC2":  "鈴村健一",
         "Series":  "Gundam Build Fighters Try",
         "SeriesJP":  "ガンダムビルドファイターズトライ",
-        "SeriesCN":  "高达创斗者TRY",
+        "SeriesCN":  "高达创战者TRY",
         "SeriesTC":  "高達創戰者TRY",
         "SeriesTC2":  "鋼彈創鬥者TRY",
-        "Cost":  2500
+        "Cost":  2500,
+        "Poses":  [
+                      {
+                          "Id":  0,
+                          "Value":  "IBポーズド"
+                      },
+                      {
+                          "Id":  1,
+                          "Value":  "OBポーズド"
+                      }
+                  ]
     },
     {
         "Id":  323,
@@ -10002,7 +10328,17 @@
                              "Id":  1,
                              "Value":  "私服"
                          }
-                     ]
+                     ],
+        "Poses":  [
+                      {
+                          "Id":  0,
+                          "Value":  "IBポーズド"
+                      },
+                      {
+                          "Id":  1,
+                          "Value":  "OBポーズド"
+                      }
+                  ]
     },
     {
         "Id":  324,
@@ -10036,7 +10372,17 @@
                              "Id":  1,
                              "Value":  "ホルダー制服"
                          }
-                     ]
+                     ],
+        "Poses":  [
+                      {
+                          "Id":  0,
+                          "Value":  "IBポーズド"
+                      },
+                      {
+                          "Id":  1,
+                          "Value":  "OB→IB引継ぎキャンペーン"
+                      }
+                  ]
     },
     {
         "Id":  325,
@@ -10084,7 +10430,17 @@
         "SeriesCN":  "机动战士高达外传 失落的节点",
         "SeriesTC":  "機動戰士高達外傳 MISSING LINK",
         "SeriesTC2":  "機動戰士鋼彈外傳 MISSING LINK",
-        "Cost":  2500
+        "Cost":  2500,
+        "Poses":  [
+                      {
+                          "Id":  0,
+                          "Value":  "IBポーズド"
+                      },
+                      {
+                          "Id":  1,
+                          "Value":  "OBポーズド"
+                      }
+                  ]
     },
     {
         "Id":  327,
@@ -10118,7 +10474,17 @@
                              "Id":  1,
                              "Value":  "制服"
                          }
-                     ]
+                     ],
+        "Poses":  [
+                      {
+                          "Id":  0,
+                          "Value":  "IBポーズド"
+                      },
+                      {
+                          "Id":  1,
+                          "Value":  "OB→IB引継ぎキャンペーン"
+                      }
+                  ]
     },
     {
         "Id":  328,
@@ -10128,6 +10494,7 @@
         "ValueTC":  "飛翼高達",
         "ValueTC2":  "飛翼鋼彈",
         "Pilot":  "Heero Yuy",
+        "PilotJP":  "ヒイロ·ユイ",
         "PilotCN":  "希罗·尤尔",
         "PilotTC":  "希羅·尤",
         "PilotTC2":  "希洛·唯",
@@ -10149,9 +10516,23 @@
                          },
                          {
                              "Id":  1,
-                             "Value":  "学生服"
+                             "Value":  "聖ガブリエル学園制服"
                          }
-                     ]
+                     ],
+        "Poses":  [
+                      {
+                          "Id":  0,
+                          "Value":  "IBポーズド"
+                      },
+                      {
+                          "Id":  1,
+                          "Value":  "OB→IB引継ぎキャンペーン"
+                      },
+                      {
+                          "Id":  2,
+                          "Value":  "GGGPxRAGE"
+                      }
+                  ]
     },
     {
         "Id":  329,
@@ -10652,7 +11033,7 @@
         "PilotSeiyuuTC2":  "/",
         "Series":  "Mobile Suit Gundam Side Story: The Blue Destiny",
         "SeriesJP":  "機動戦士ガンダム外伝 THE BLUE DESTINY",
-        "SeriesCN":  "机动战士高达外传 THE BLUE DESTINY",
+        "SeriesCN":  "机动战士高达外传 蓝色命运",
         "SeriesTC":  "機動戰士高達外傳 THE BLUE DESTINY",
         "SeriesTC2":  "機動戰士鋼彈外傳 THE BLUE DESTINY",
         "Cost":  0
@@ -11036,7 +11417,7 @@
         "PilotSeiyuuTC2":  "/",
         "Series":  "Gundam Build Fighters Try",
         "SeriesJP":  "ガンダムビルドファイターズトライ",
-        "SeriesCN":  "高达创斗者TRY",
+        "SeriesCN":  "高达创战者TRY",
         "SeriesTC":  "高達創戰者TRY",
         "SeriesTC2":  "鋼彈創鬥者TRY",
         "Cost":  0

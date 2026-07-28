@@ -14,7 +14,8 @@ Log.Logger = new LoggerConfiguration()
 
 Log.Information("+=====================================+");
 Log.Information("+       SERVER-INFINITE FOR IBv4      +");
-Log.Information("+            VERSION: 1.0             +");
+Log.Information("+            BY LAZYSHEEP             +");
+Log.Information("+            VERSION: 1.1             +");
 Log.Information("+        FORKED FROM EXVS2-POC        +");
 Log.Information("+                                     +");
 Log.Information("+ Disclaimer:                         +");
@@ -88,12 +89,18 @@ try
         app.UseSwaggerUI();
     }
 
-    // auto start migration
-	using (var scope = app.Services.CreateScope())
-	{
-		var db = scope.ServiceProvider.GetRequiredService<ServerDbContext>();
-		db.Database.Migrate();
-	}
+    // Auto-migrate on startup (degraded: log failure and continue so the host still runs).
+    try
+    {
+        using var scope = app.Services.CreateScope();
+        var db = scope.ServiceProvider.GetRequiredService<ServerDbContext>();
+        db.Database.Migrate();
+    }
+    catch (Exception ex)
+    {
+        Log.Error(ex,
+            "Database migration failed; continuing in degraded mode. Schema may be outdated and game/UI DB calls can fail until migration succeeds");
+    }
 
     app.UseBlazorFrameworkFiles();
 	app.MapControllers();
