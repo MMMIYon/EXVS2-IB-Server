@@ -1,4 +1,4 @@
-# Server-Infinite 1.13.2 (for IBv4)
+# Server-Infinite 1.13.2 (for IBv13)
 # Server-Infinite 1.13 （芽衣版本）
 
 ## 写在最前
