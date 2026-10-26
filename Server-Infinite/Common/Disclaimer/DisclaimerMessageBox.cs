@@ -8,15 +8,18 @@ internal static class DisclaimerMessageBox
 {
     public static void Start()
     {
-        if (!OperatingSystem.IsWindows())
-            return;
-
-        var thread = new Thread(ShowDialog)
-        {
-            IsBackground = true,
-        };
-        thread.SetApartmentState(ApartmentState.STA);
-        thread.Start();
+        // 1.1.3: the startup disclaimer dialog is disabled (Start() does nothing).
+        // Original behaviour kept below for reference:
+        //
+        // if (!OperatingSystem.IsWindows())
+        //     return;
+        //
+        // var thread = new Thread(ShowDialog)
+        // {
+        //     IsBackground = true,
+        // };
+        // thread.SetApartmentState(ApartmentState.STA);
+        // thread.Start();
     }
 
     private static void ShowDialog()
